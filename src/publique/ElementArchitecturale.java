@@ -12,7 +12,7 @@ public class ElementArchitecturale {
         this.nom = nom;
     }
 
-    public String getNom() {
+    public String getNom() { 
         return nom;
     }
 
