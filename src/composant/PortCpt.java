@@ -8,19 +8,14 @@ import lien.Binding;
 
 public class PortCpt extends InterfaceCpt {
 
-//private ArrayList<Ports> ports;
-	private String nom;
-	private Attachement attachement; 
-	private Binding binding;
+    //private ArrayList<Ports> ports;
+    private String nom;
 
-public PortCpt(String nom, Attachement attachement, Binding binding) {
-	// TODO Auto-generated constructor stub
-    this.nom=nom;
-    this.attachement= attachement;
-    this.binding= binding;
 
-}
-
+    public PortCpt(String nom, ArrayList<ServiceCpt> serviceCS, ArrayList<PortCpt> portCpt, String nom1) {
+        super(nom, serviceCS, portCpt);
+        this.nom = nom1;
+    }
 
     @Override
     public String getNom() {
@@ -32,19 +27,4 @@ public PortCpt(String nom, Attachement attachement, Binding binding) {
         this.nom = nom;
     }
 
-    public Attachement getAttachement() {
-        return attachement;
-    }
-
-    public void setAttachement(Attachement attachement) {
-        this.attachement = attachement;
-    }
-
-    public Binding getBinding() {
-        return binding;
-    }
-
-    public void setBinding(Binding binding) {
-        this.binding = binding;
-    }
 }

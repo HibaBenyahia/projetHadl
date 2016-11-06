@@ -10,8 +10,9 @@ public class Composant extends ElementArchitecturale{
 	private String nom;
 	private ArrayList<InterfaceCpt> interfaceCpt;
 
-	public Composant(String nom, ArrayList<InterfaceCpt> interfaceCpt) {
-		this.nom = nom;
+	public Composant(String nom, String nom1, ArrayList<InterfaceCpt> interfaceCpt) {
+		super(nom);
+		this.nom = nom1;
 		this.interfaceCpt = interfaceCpt;
 	}
 

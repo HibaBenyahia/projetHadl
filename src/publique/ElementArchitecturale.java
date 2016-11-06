@@ -6,17 +6,17 @@ import java.util.ArrayList;
 
 public class ElementArchitecturale {
 
-    public String nom;
+    private String name;
 
-    public ElementArchitecturale(String nom) {
-        this.nom = nom;
+    public ElementArchitecturale(String name) {
+        this.name = name;
     }
 
-    public String getNom() { 
-        return nom;
+    public String getName() {
+        return name;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setName(String name) {
+        this.name = name;
     }
 }
